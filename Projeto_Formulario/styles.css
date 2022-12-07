@@ -26,24 +26,25 @@ body {
 
 .section{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-between; 
     background-color: black;
     opacity: 0.6;
     height: 130px;
     width: 450px;
-    margin-top: 130px;
+    margin-top: 115px;
 }
 
 .logo img{
+    padding-left: 150px;
     width: 160px;   
-    padding-left: 50px; 
+    padding-top: 25px;
 }
 
 .text1_section{
     color: white;    
     text-align: center; 
     font-size: 11px;
+    padding-top: 450px;  
 }
 
 /*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
@@ -84,25 +85,23 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-right: 300px;
+    padding-right: 270px;
     
 }
 
 .input-box {
     display: flex;
     flex-direction: column;
-    margin-bottom: 7px;
-    font-size: 12px;
-    
+    font-size: 11px;   
 }
 
 .input-box input{
-    margin: 3px 0px;
-    padding: 7px 60px;
+    margin: 9px 0px;
+    padding: 7px 110px 7px 10px;
     border: none;
     border-radius: 5px;
     box-shadow: 1px 1px 6px #0000001c;
-    font-size: 12px;    
+    font-size: 12px;  
 }
 
 /*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
