@@ -94,13 +94,22 @@ ul {
 }
 
 .figure2{
-    position:relative;
+    padding-left: 700px;
+    padding-top: 598px;
+    position:absolute;
+    z-index: -1;
 }
 
 .rectangle1{
     width: 730px;
     height: 200px;
     background:#f8c40c;
+}
+
+.rectangle2{
+    width: 730px;
+    height: 200px;
+    background:#f8570c;
 }
 
 .left-items2{
@@ -243,6 +252,56 @@ ul {
 }
 
 /*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+.section4{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.tittle_left4{
+    font-size: 60px;
+    font-weight: bold;
+    padding-bottom: 30px;
+    padding-left: 400px;
+}
+
+.tittle_rigth4{
+    font-size: 60px;
+    font-weight: bold;
+    padding-bottom: 30px;
+    padding-right: 345px;   
+}
+
+.left-items4{
+    text-align: center;
+    background: white;
+    padding-top: 160px;
+    padding-bottom: 280px;
+}
+
+.rigth-items4{
+    text-align: center;
+    background: #f8c40c;
+    padding-top: 160px;
+    padding-bottom: 280px;
+}
+
+.text4{
+    padding-top: 20px;
+    padding-left: 300px;
+    padding-right: 30px; 
+}
+
+.text5{
+    padding-top: 20px;
+    padding-right: 300px;
+    padding-left: 30px; 
+}
+
+
+
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+
 .footer{
     display: flex;
     justify-content: center;

@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Roboto Serif', serif;
+}
+
+html,
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    padding-left: 200px; 
+    padding-right: 150px;
+    background: white;
+    color: black;
+    font-size: 20px;
+}
+
+.logo{
+    font-size: 30px;
+}
+
+strong{
+    color: #fc7404;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+    
+ul {
+    list-style-type: none;
+}
+    
+.links{
+    gap: 25px;
+    display: flex;
+}
+    
+.left-items, .right-items {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+} 
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+.section3{
+    background: url(/images/opção10.jpeg);
+    background-size: cover;
+    padding-left: 120px;
+    padding-bottom: 300px;
+}
+
+.title3{
+    padding-top: 90px;
+    padding-bottom: 10px;
+    font-size: 60px;
+    color: #fc7404;
+    text-align: center;
+}
+
+.text3{
+    text-align: center;
+    color: white;
+    padding-top: 15px;
+    font-style: italic;
+    font-size: 16px;
+}
+
+.group_card{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 300px));    
+    padding-top: 35px;
+    gap: 35px; 
+}
+
+.card1{
+    display: grid; 
+    gap: 10px;
+    background: white;
+    padding: 30px;
+}
+
+.card2{
+    display: grid; 
+    gap: 10px;
+    background: rgba(0, 0, 0, 0.815);
+    padding: 30px;
+    color: white;
+}
+
+.card3{
+    display: grid; 
+    gap: 10px;
+    background: #fc7404;
+    padding: 30px;
+    color: white;
+}
+
+.h1{
+    padding-top: 20px;
+    font-size: 80px;
+}
+
+.h2{
+    padding-top: 20px;
+    font-size: 80px;
+    color: #fc7404;
+}
+
+.h3{
+    padding-top: 20px;
+    font-size: 80px;
+    color: white;
+}
+
+.title_card{
+    font-size: 40px;
+    padding-bottom: 15px;
+}
+
+.text_card{
+    font-size: 18px;
+    padding-bottom: 25px;
+}
+
+.button_card{
+    padding-bottom: 30px;
+}
+
+.button_card1{
+    border: none;
+    background:none;
+    color: #fc7404;
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration:underline;
+    text-underline-position: under;
+}
+
+.button_card3{
+    border: none;
+    background:none;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration:underline;
+    text-underline-position: under;
+}

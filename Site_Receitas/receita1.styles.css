@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Roboto Serif', serif;
+}
+
+html,
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    padding-left: 200px; 
+    padding-right: 200px;
+    background: white;
+    color: black;
+    font-size: 20px;
+}
+
+.logo{
+    font-size: 30px;
+}
+
+strong{
+    color: #fc7404;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+    
+ul {
+    list-style-type: none;
+}
+    
+.links{
+    gap: 25px;
+    display: flex;
+}
+    
+.left-items, .right-items {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+} 
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+
+.section{
+
+}
+
+h1{
+    text-align: center;
+    font-size: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: #fc7404;
+    color: white;
+}
+
+.img_section{
+    padding-top: 30px;
+    padding-left: 290px;
+    padding-bottom: 20px;
+}
+
+h2{
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 30px;  
+}
+
+p{
+    text-align: center;    
+}
+
+h3 {
+    text-align: center;
+    padding-top: 10px; 
+    padding-bottom: 10px;
+}
+
+ul, li{
+    text-align: center;
+}
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: white;
+    color: black;
+}
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
