@@ -30,7 +30,7 @@ li:before {
     display: inline-block;
     position: absolute;
     left: -1em;
-    top: -0.4em;
+    top: -0.2em;
     color:#02eede;
     
 }
@@ -50,6 +50,7 @@ Main{
 .text{
     padding-left: 25px;
 }
+
 h1{
    padding-bottom: 40px;
 }

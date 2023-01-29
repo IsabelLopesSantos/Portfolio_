@@ -298,8 +298,6 @@ ul {
     padding-left: 30px; 
 }
 
-
-
 /*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
 
 .footer{
@@ -308,7 +306,7 @@ ul {
     align-items: center;
     padding-top: 20px;
     padding-bottom: 20px;
-    background: white;
-    color: black;
+    background: rgba(0, 0, 0, 0.815);
+    color: rgb(255, 255, 255);
 }
 /*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/

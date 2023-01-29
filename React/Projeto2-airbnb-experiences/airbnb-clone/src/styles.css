@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  width: 550px;
+  height: 70px;
+  padding-left: 30px;
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo {
+  max-width: 100px;
+}
+
+section {
+    padding-top: 10px;
+    max-width: 550px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-text {
+  padding-left: 36px;
+}
+
+.hero-text h1 {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 40px;
+}
+
+.hero-text p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 17.6px;
+}
+
+.hero-grid {
+  max-width: 400px;
+  margin: auto;
+}
+
+.card-list {
+  display: flex;
+  margin-left: 37px;
+  gap: 20px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  margin: 10px 0 0 36px;
+  line-height: 0px;
+  padding-bottom: 30px;
+  max-width: 176px;
+  font-weight: 300;
+  position: relative;
+}
+
+.coverImg {
+  max-width: 176px;
+  border-radius: 7%;
+}
+
+.card-rating {
+  flex-wrap: wrap;
+  display:flex ;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+}
+
+.star {
+  max-width: 14px;
+}
+
+.card-badge {
+  position: absolute;
+  top: 8px;
+  left: 6px;
+  width: 80px;
+  background-color: white;
+  padding: 10px 8px;
+  border-radius: 2px;
+  font-weight: bold;
+}

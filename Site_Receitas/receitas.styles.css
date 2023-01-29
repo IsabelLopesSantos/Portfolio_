@@ -53,10 +53,9 @@ ul {
 } 
 /*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
 .section3{
-    background: url(/images/opção10.jpeg);
-    background-size: cover;
+    background:rgba(0, 0, 0, 0.815);
     padding-left: 120px;
-    padding-bottom: 300px;
+    padding-bottom: 110px;
 }
 
 .title3{
@@ -154,4 +153,14 @@ ul {
     font-size: 15px;
     text-decoration:underline;
     text-underline-position: under;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: white;
+    color: black;
 }
