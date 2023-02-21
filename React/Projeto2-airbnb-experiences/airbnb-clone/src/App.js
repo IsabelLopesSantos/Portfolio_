@@ -16,6 +16,7 @@ export default function App() {
     rating = {elemento.stats.rating}
     reviewCount = {elemento.stats.reviewCount} 
     location = {elemento.location}
+    openSpots = {elemento.openSpots}
     />
   )})
 
@@ -23,9 +24,9 @@ export default function App() {
     <div className="App">
       <Navbar />
       <Hero />
-      <div className="containerCards">
+      <section className="card-list">
         {elementData}
-      </div>
+      </section>
     </div>
   );
 }

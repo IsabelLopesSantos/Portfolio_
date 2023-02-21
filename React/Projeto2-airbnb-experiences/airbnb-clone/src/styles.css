@@ -19,7 +19,7 @@ nav {
 }
 
 .nav-logo {
-  max-width: 100px;
+  max-width: 110px;
 }
 
 section {
@@ -59,16 +59,15 @@ section {
   gap: 20px;
 }
 
-.cards {
+.card {
   display: flex;
   flex-direction: column;
-  font-size: 12px;
-  margin: 10px 0 0 36px;
-  line-height: 0px;
+  position: relative;
   padding-bottom: 30px;
   max-width: 176px;
+  font-size: 12px;
   font-weight: 300;
-  position: relative;
+  line-height: 0;
 }
 
 .coverImg {
@@ -77,8 +76,7 @@ section {
 }
 
 .card-rating {
-  flex-wrap: wrap;
-  display:flex ;
+  display: flex;
   align-items: center;
   gap: 8px;
   font-size: 12px;
@@ -90,10 +88,9 @@ section {
 
 .card-badge {
   position: absolute;
-  top: 8px;
+  top: 6px;
   left: 6px;
-  width: 80px;
-  background-color: white;
+  background-color: white; 
   padding: 10px 8px;
   border-radius: 2px;
   font-weight: bold;
