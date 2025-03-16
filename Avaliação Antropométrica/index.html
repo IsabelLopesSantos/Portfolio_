@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação Antropométrica</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/src/assets/css/style.css">
+</head>
+
+<body>
+    <header id="header">
+        <h1>FaroFitness</h1>
+    </header>
+    
+    <div class="container" id="start-screen">
+        <img src="/src/assets/images/5233015.jpg" alt="logo-farofitness" class="farofitness-image">
+        <h2>Bem-vindo ao FaroFitness</h2>
+        <p>Comece sua avaliação se você estiver pronto!</p>
+        <button class="btn btn-next" onclick="startEvaluation()">
+            <i class="fas fa-check"></i> Estou pronto
+        </button>
+    </div>
+
+    <div class="container hidden" id="form-container">
+        <form id="form">
+            <div class="step" id="step1">
+                <h2><i class="fas fa-user"></i> Dados Pessoais</h2>
+                <label for="nome">
+                    <i class="fas fa-user"></i> Nome Completo:
+                </label>
+                <input type="text" id="nome" placeholder="Exemplo: João Silva">
+                <label for="idade">
+                    <i class="fas fa-calendar-alt"></i> Idade:
+                </label>
+                <input type="number" id="idade" placeholder="Exemplo: 25">
+                <label for="genero">
+                    <i class="fas fa-venus-mars"></i> Gênero:
+                </label>
+                <select id="genero">
+                    <option value="Masculino">Masculino</option>
+                    <option value="Feminino">Feminino</option>
+                    <option value="Outro">Outro</option>
+                </select>
+                <label for="objetivo">
+                    <i class="fas fa-bullseye"></i> Objetivo:
+                </label>
+                <select id="objetivo">
+                    <option value="emagrecimento">Emagrecimento</option>
+                    <option value="hipertrofia">Hipertrofia</option>
+                    <option value="manutencao">Manutenção</option>
+                </select>
+                <button type="button" class="btn btn-next" onclick="nextStep(1)">
+                    <i class="fas fa-arrow-right"></i> Próximo
+                </button>
+            </div>
+
+            <div class="step hidden" id="step2">
+                <h2><i class="fas fa-bullseye"></i> Objetivos Esperados</h2>
+                <label for="metas">
+                    <i class="fas fa-list"></i> Escolha 5 metas, que você considera importante para o seu resultado ideal:
+                </label>
+                <div id="metas" class="metas-container">
+                    <label><input type="checkbox" class="meta" value="Emagrecimento"> Emagrecimento</label>
+                    <label><input type="checkbox" class="meta" value="Hipertrofia"> Hipertrofia</label>
+                    <label><input type="checkbox" class="meta" value="Definição Muscular"> Definição Muscular</label>
+                    <label><input type="checkbox" class="meta" value="Ganho de Força"> Ganho de Força</label>
+                    <label><input type="checkbox" class="meta" value="Melhoria da Resistência Física"> Melhoria da Resistência Física</label>
+                    <label><input type="checkbox" class="meta" value="Manutenção do Peso"> Manutenção do Peso</label>
+                    <label><input type="checkbox" class="meta" value="Melhoria da Postura"> Melhoria da Postura</label>
+                    <label><input type="checkbox" class="meta" value="Aumento da Flexibilidade"> Aumento da Flexibilidade</label>
+                    <label><input type="checkbox" class="meta" value="Redução do Estresse e Ansiedade"> Redução do Estresse e Ansiedade</label>
+                    <label><input type="checkbox" class="meta" value="Melhoria na Qualidade do Sono"> Melhoria na Qualidade do Sono</label>
+                    <label><input type="checkbox" class="meta" value="Aprimoramento da Mobilidade"> Aprimoramento da Mobilidade</label>
+                    <label><input type="checkbox" class="meta" value="Melhoria da Coordenação Motora"> Melhoria da Coordenação Motora</label>
+                    <label><input type="checkbox" class="meta" value="Aumento da Capacidade Aeróbica"> Aumento da Capacidade Aeróbica</label>
+                    <label><input type="checkbox" class="meta" value="Maior Explosão e Potência Muscular"> Maior Explosão e Potência Muscular</label>
+                    <label><input type="checkbox" class="meta" value="Desenvolvimento da Agilidade"> Desenvolvimento da Agilidade</label>
+                    <label><input type="checkbox" class="meta" value="Preparação para Competições"> Preparação para Competições</label>
+                    <label><input type="checkbox" class="meta" value="Reabilitação de Lesões"> Reabilitação de Lesões</label>
+                    <label><input type="checkbox" class="meta" value="Melhoria da Saúde Cardiovascular"> Melhoria da Saúde Cardiovascular</label>
+                    <label><input type="checkbox" class="meta" value="Prevenção de Doenças"> Prevenção de Doenças</label>
+                    <label><input type="checkbox" class="meta" value="Longevidade e Qualidade de Vida"> Longevidade e Qualidade de Vida</label>
+                </div>
+                <button type="button" class="btn btn-next" onclick="nextStep(2)">
+                    <i class="fas fa-arrow-right"></i> Próximo
+                </button>
+            </div>
+
+            <div class="step hidden" id="step3">
+                <h2><i class="fas fa-ruler-combined"></i> Medidas</h2>
+                <label for="altura">
+                    <i class="fas fa-ruler-vertical"></i> Altura (cm):
+                </label>
+                <input type="number" step="0.01" id="altura" placeholder="Exemplo: 175">
+                <label for="peso">
+                    <i class="fas fa-weight-hanging"></i> Peso (Kg):
+                </label>
+                <input type="number" step="0.01" id="peso" placeholder="Exemplo: 70">
+                <button type="button" class="btn btn-next" onclick="nextStep(3)">
+                    <i class="fas fa-arrow-right"></i> Próximo
+                </button>
+            </div>
+            <div class="step hidden" id="step4">
+                <h2><i class="fas fa-tape"></i> Circunferências</h2>
+                <label for="cintura">
+                    <i class="fas fa-tape"></i> Cintura (cm):
+                </label>
+                <input type="number" id="cintura" placeholder="Exemplo: 80">
+                <label for="abdomen">
+                    <i class="fas fa-tape"></i> Abdômen (cm):
+                </label>
+                <input type="number" id="abdomen" placeholder="Exemplo: 85">
+                <label for="quadril">
+                    <i class="fas fa-tape"></i> Quadril (cm):
+                </label>
+                <input type="number" id="quadril" placeholder="Exemplo: 95">
+                <label for="coxa">
+                    <i class="fas fa-tape"></i> Coxa Direita (cm):
+                </label>
+                <input type="number" id="coxa" placeholder="Exemplo: 55">
+                <label for="braco">
+                    <i class="fas fa-tape"></i> Braço Relaxado Direito (cm):
+                </label>
+                <input type="number" id="braco" placeholder="Exemplo: 30">
+                <button type="button" class="btn btn-next" onclick="nextStep(4)">
+                    <i class="fas fa-arrow-right"></i> Próximo
+                </button>
+            </div>
+            <div class="step hidden" id="step5">
+                <h2><i class="fas fa-tape"></i> Dobras Cutâneas</h2>
+                <label for="abdominal">
+                    <i class="fas fa-tape"></i> Abdominal (mm):
+                </label>
+                <input type="number" id="abdominal" placeholder="Exemplo: 12">
+                <label for="triceps">
+                    <i class="fas fa-tape"></i> Tríceps (mm):
+                </label>
+                <input type="number" id="triceps" placeholder="Exemplo: 10">
+                <label for="suprailíaca">
+                    <i class="fas fa-tape"></i> Suprailíaca (mm):
+                </label>
+                <input type="number" id="suprailíaca" placeholder="Exemplo: 15">
+                <label for="subescapular">
+                    <i class="fas fa-tape"></i> Subescapular (mm):
+                </label>
+                <input type="number" id="subescapular" placeholder="Exemplo: 20">
+                <label for="torax">
+                    <i class="fas fa-tape"></i> Tórax (mm):
+                </label>
+                <input type="number" id="torax" placeholder="Exemplo: 18">
+                <label for="coxa_dobra">
+                    <i class="fas fa-tape"></i> Coxa (mm):
+                </label>
+                <input type="number" id="coxa_dobra" placeholder="Exemplo: 22">
+                <button type="button" class="btn btn-next" onclick="nextStep(5)">
+                    <i class="fas fa-arrow-right"></i> Próximo
+                </button>
+            </div>
+            <div class="step hidden" id="step6">
+                <h2><i class="fas fa-chart-line"></i> Resultados Atuais</h2>
+                <p>IMC: <span id="imc"></span></p>
+                <p>Peso Atual:<span id="pesoAtual"></span></p>
+                <p>Massa Gorda: <span id="massaGorda"></span></p>
+                <p>% Massa Gorda: <span id="percentMassaGorda"></span></p>
+                <p>Massa Magra: <span id="massaMagra"></span></p>
+                <p>% Massa Magra: <span id="percentMassaMagra"></span></p>
+                <p>Razão Cintura/Quadril: <span id="razaoCinturaQuadril"></span></p>
+                <button type="button" class="btn btn-final" onclick="calcularResultados()">
+                    <i class="fas fa-calculator"></i> Calcular Resultado Atual
+                </button>
+                <hr>
+                <h2><i class="fas fa-chart-line"></i> Resultados Ideais</h2>
+                <p>Peso Ideal: <span id="pesoIdeal"></span></p>
+                <p>Massa Gorda Ideal: <span id="massaGordaIdeal"></span></p>
+                <p>% Massa Gorda Ideal: <span id="percentMassaGordaIdeal"></span></p>
+                <p>Massa Magra Ideal: <span id="massaMagraIdeal"></span></p>
+                <p>% Massa Magra Ideal: <span id="percentMassaMagraIdeal"></span></p>
+                <p id="mensagemMotivacional" style="font-weight: bold; color: #2e7d32;"></p>
+
+                <button type="button" class="btn btn-final" onclick="calcularResultadoIdeal()">
+                    <i class="fas fa-calculator"></i> Calcular Resultado Ideal
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <footer id="footer">
+        <p>&copy; 2025 FaroFitness - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="/src/assets/js/script.js"></script>
+</body>
+</html>
